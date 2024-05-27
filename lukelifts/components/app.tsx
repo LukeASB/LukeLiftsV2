@@ -5,18 +5,8 @@ interface IApp {
     page?: string;
 }
 
-/*
-TO DO:
-- Nav Bar
-- Banner
-- Card Section
-- Join Email Section
-- Footer
-*/
-
 const App: React.FC<IApp> = ({ page = ""}) => {
     const renderPage = () => {
-        console.log(page);
         if (page === 'home') {
             return <Home />;
         }
