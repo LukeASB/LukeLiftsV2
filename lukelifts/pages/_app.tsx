@@ -6,18 +6,18 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 
 // Require jQuery
-const $ = require('jquery');
+// const $ = require('jquery');
 
-// Make jQuery available globally
-declare global {
-  interface Window {
-    $: any;
-  }
-}
+// // Make jQuery available globally
+// declare global {
+//   interface Window {
+//     $: any;
+//   }
+// }
 
-if (typeof window !== 'undefined') {
-  window.$ = $;
-}
+// if (typeof window !== 'undefined') {
+//   window.$ = $;
+// }
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -27,11 +27,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
         {/* <!-- Bootstrap JS and dependencies --> */}
-        <Script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer/>
-        <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer/>
-      <Component {...pageProps} />;
+      <Script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"/>
+      {/* <Script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer/> */}
+      <Component {...pageProps} />
     </>
-  )
+  );
 }
 
 export default MyApp;

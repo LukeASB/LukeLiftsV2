@@ -7,13 +7,23 @@ html, body, #__next {
 .mainLayout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .content {
   flex: 1;
 }
+
+.sectionBorder {
+  border-bottom:1px solid #cecece;
+}
+
+.sectionMinHeight {
+  min-height: 100px;
+}
+
 .footer {
   background-color: #f8f9fa;
   padding: 10px 0;
 }
+

@@ -20,7 +20,7 @@ const App: React.FC<IApp> = ({ page = ""}) => {
         <MainLayout>
             {renderPage()}
         </MainLayout>
-    )
+    );
 }
 
 export default App;

@@ -1,14 +1,14 @@
-import CardView from "../card/cardView";
+import About from "../about";
+import Programmes from "../programmes";
 import EmailListSection from "../emailListSection";
 
 const Home: React.FC = () => {
     return (
-        <div className="home">
+        <div id="home">
             {/* <!-- Body Content --> */}
             <div className="container content">
-                <h1 className="mt-5">Welcome to the Basic Bootstrap Website</h1>
-                <p className="lead">This is a simple template to get you started with Bootstrap.</p>
-                <CardView />
+                <About />
+                <Programmes />
                 <EmailListSection />
             </div>
         </div>
