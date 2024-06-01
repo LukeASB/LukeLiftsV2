@@ -3,19 +3,17 @@ import Navbar from "./navBar";
 import Footer from "./footer";
 
 interface IMainLayout {
-    children?: ReactNode
+    children?: ReactNode;
 }
 
 const MainLayout: React.FC<IMainLayout> = ({ children }) => {
     return (
         <div className="mainLayout">
-            <Navbar/>
-            <main>
-                { children }
-            </main>
-            <Footer/>
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
         </div>
     );
-}
+};
 
 export default MainLayout;

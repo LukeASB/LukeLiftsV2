@@ -1,5 +1,5 @@
 import About from "../about";
-import Programmes from "../programmes";
+import Programs from "../programs";
 import EmailListSection from "../emailListSection";
 
 const Home: React.FC = () => {
@@ -8,11 +8,11 @@ const Home: React.FC = () => {
             {/* <!-- Body Content --> */}
             <div className="container content">
                 <About />
-                <Programmes />
+                <Programs />
                 <EmailListSection />
             </div>
         </div>
     );
-}
+};
 
 export default Home;
