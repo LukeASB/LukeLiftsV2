@@ -5,7 +5,7 @@ const CardView: React.FC = () => {
         <>
             <Card
                 name="BEGINNER 12 WEEK PROGRAM"
-                level="LEVEL: BEGINNER"
+                level=""
                 price="£10.00"
                 featureList={[
                     "LEVEL: NOVICE",
@@ -17,8 +17,8 @@ const CardView: React.FC = () => {
                 available={true}
             />
             <Card
-                name="12 Week Program"
-                level="Intermediate"
+                name="INTERMEDIATE 12 WEEK PROGRAM"
+                level=""
                 price="£15.00"
                 featureList={[
                     "LEVEL: INTERMEDIATE",
@@ -30,8 +30,8 @@ const CardView: React.FC = () => {
                 available={true}
             />
             <Card
-                name="Personal 12 Week Program"
-                level="Any"
+                name="PERSONAL 12 WEEK PROGRAM"
+                level=""
                 price="£20.00"
                 featureList={[
                     "PERSONALISED PROGRAM",

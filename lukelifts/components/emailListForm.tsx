@@ -55,25 +55,3 @@ const EmailListForm: React.FC = () => {
 };
 
 export default EmailListForm;
-
-{
-    /* <form action="https://app.us13.list-manage.com/subscribe/post?u=d06948fb9179aa3a7d39c4da2&amp;id=821aa5c2f5&amp;f_id=0078f0e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank">
-<div className="mb-3">
-    <input
-        type="email"
-        className="form-control"
-        placeholder="Enter your email"
-        aria-label="Enter your email"
-        required
-    />
-</div>
-<div>
-    <button
-        className="btn btn-primary"
-        type="submit"
-    >
-        GET FREE PROGRAM NOW
-    </button>
-</div>
-</form> */
-}
