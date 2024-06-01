@@ -22,6 +22,7 @@ const EmailListSection: React.FC = () => {
                             <img
                                 src="https://via.placeholder.com/400"
                                 alt="Placeholder"
+                                className="img-fluid"
                             />
                         </div>
                     </div>

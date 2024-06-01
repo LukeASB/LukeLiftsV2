@@ -6,7 +6,7 @@ const ProgramInfo: React.FC = () => {
                     <div className="banner programmeBanner">
                         <div className="banner-contents">
                             <div className="row text-center">
-                                <h1 className="img-responsive">IMPORTANT</h1>
+                                <h1 className="img-responsive">IMPORTANT❗</h1>
                             </div>
                             <p>
                                 After purchasing a program, you will receive an

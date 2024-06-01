@@ -29,7 +29,7 @@ const EmailListForm: React.FC = () => {
 
             <div
                 aria-hidden="true"
-                style={{ position: "absolute", left: "-5000px" }}
+                style={{ position: "absolute", visibility: "hidden"}}
             >
                 {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
                 <input
