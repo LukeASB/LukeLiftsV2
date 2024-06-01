@@ -17,7 +17,7 @@ const Card: React.FC<ICard> = (card: ICard) => {
     return (
         <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4 mb-4">
             <div className="card h-100">
-                <div className="card-body">
+                <div className="card-body bg-dark text-light border-light">
                     <ul className="list-unstyled">
                         <li className="price h4">
                             <span>{card.name} </span>
@@ -44,7 +44,7 @@ const Card: React.FC<ICard> = (card: ICard) => {
                         </li>
                     </ul>
                 </div>
-                <div className="card-footer">
+                <div className="card-footer bg-dark text-light border-light">
                     <form
                         action="https://www.paypal.com/cgi-bin/webscr"
                         method="post"

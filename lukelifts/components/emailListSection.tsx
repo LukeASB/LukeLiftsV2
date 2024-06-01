@@ -3,7 +3,7 @@ import EmailListForm from "./emailListForm";
 const EmailListSection: React.FC = () => {
     return (
         <div id="join">
-            <div className="container my-3 pb-3 sectionMinHeight">
+            <div className="container my-3 pb-3 sectionMinHeight text-light">
                 <section className="container my-5">
                     <div className="row align-items-start">
                         <div className="col-md-6">
