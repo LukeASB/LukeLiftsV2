@@ -1,4 +1,6 @@
+
 import { features } from "process";
+import Modal from "../modal";
 
 interface ICard {
     name: string;
@@ -6,6 +8,7 @@ interface ICard {
     price: string;
     featureList: string[];
     readMoreText: string;
+    image: string;
     payPalId: string;
     available: boolean;
 }
@@ -26,8 +29,9 @@ const Card: React.FC<ICard> = (card: ICard) => {
                             {card.price}
                             <div className="trainingAndMealPlan mt-3">
                                 <img
-                                    src="https://via.placeholder.com/100"
-                                    alt="Placeholder"
+                                    src={`../assets/${card.image}.png`}
+                                    alt={card.image}
+                                    className="img-fluid"
                                 />
                             </div>
                         </li>
@@ -38,9 +42,16 @@ const Card: React.FC<ICard> = (card: ICard) => {
                                 className="btn btn-primary btn-custom robo popup-trigger popmake-680"
                                 data-popup-id="680"
                                 data-do-default="0"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
                             >
                                 Read More
                             </button>
+                            <Modal
+                                id="exampleModal"
+                                title="Modal Title"
+                                body="This is the body of the modal."
+                             />
                         </li>
                     </ul>
                 </div>
@@ -54,7 +65,7 @@ const Card: React.FC<ICard> = (card: ICard) => {
                         <input
                             type="hidden"
                             name="hosted_button_id"
-                            value="77QKFZUT48UBN"
+                            value={card.payPalId}
                         />{" "}
                         {/* Unique PayPal Value */}
                         <input

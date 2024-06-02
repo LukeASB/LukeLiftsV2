@@ -13,6 +13,7 @@ const CardView: React.FC = () => {
                     "REQUIRES: BAR / WEIGHTS",
                 ]}
                 readMoreText=""
+                image="benchpress"
                 payPalId="HPQXXNL6E4XGL"
                 available={true}
             />
@@ -26,6 +27,7 @@ const CardView: React.FC = () => {
                     "REQUIRES: BAR / WEIGHTS",
                 ]}
                 readMoreText=""
+                image="deadlift"
                 payPalId="WWWHS4QVZ5U4C"
                 available={true}
             />
@@ -39,6 +41,7 @@ const CardView: React.FC = () => {
                     "REQUIRES: BAR / WEIGHTS",
                 ]}
                 readMoreText=""
+                image="squat"
                 payPalId="77QKFZUT48UBN"
                 available={true}
             />
