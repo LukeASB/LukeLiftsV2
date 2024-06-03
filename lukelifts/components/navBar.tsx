@@ -1,12 +1,12 @@
+import Link from "next/link";
+
 const Navbar: React.FC = () => {
     return (
         // <!-- Navbar -->
         <nav className="navbar navbar-expand-lg navbar-light bg-primary">
             <div className="container content">
                 <strong>
-                    <a className="navbar-brand text-light" href="#">
-                        LUKELIFTS
-                    </a>
+                      <Link className="navbar-brand text-light" href="/">LUKELIFTS</Link>
                 </strong>
                 {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

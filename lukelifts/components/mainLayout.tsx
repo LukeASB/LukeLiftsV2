@@ -1,10 +1,7 @@
-import { ReactNode } from "react";
 import Navbar from "./navBar";
 import Footer from "./footer";
+import IMainLayout from "../shared/interfaces/IMainLayout";
 
-interface IMainLayout {
-    children?: ReactNode;
-}
 
 const MainLayout: React.FC<IMainLayout> = ({ children }) => {
     return (

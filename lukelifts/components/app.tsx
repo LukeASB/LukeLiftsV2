@@ -1,9 +1,6 @@
 import Home from "./pages/home";
 import MainLayout from "./mainLayout";
-
-interface IApp {
-    page?: string;
-}
+import IApp from "../shared/interfaces/IApp";
 
 const App: React.FC<IApp> = ({ page = "" }) => {
     const renderPage = () => {

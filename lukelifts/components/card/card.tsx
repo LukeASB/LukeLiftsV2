@@ -1,17 +1,6 @@
 
-import { features } from "process";
 import Modal from "../modal";
-
-interface ICard {
-    name: string;
-    level: string;
-    price: string;
-    featureList: string[];
-    readMoreText: string;
-    image: string;
-    payPalId: string;
-    available: boolean;
-}
+import ICard from "../../shared/interfaces/ICard";
 
 const generateCardFeatureList = (featureList: string[]) =>
     featureList.map((el, i) => <li key={`${i}_${el}`}>{el}</li>);
@@ -47,11 +36,13 @@ const Card: React.FC<ICard> = (card: ICard) => {
                             >
                                 Read More
                             </button>
+
                             <Modal
                                 id="exampleModal"
                                 title="Modal Title"
                                 body="This is the body of the modal."
-                             />
+                            />
+
                         </li>
                     </ul>
                 </div>

@@ -1,8 +1,4 @@
-interface IModal {
-    id: string,
-    title: string,
-    body: string
-}
+import IModal from "../shared/interfaces/IModal";
 
 const Modal: React.FC<IModal> = (modal: IModal) => {
     return (
