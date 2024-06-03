@@ -32,7 +32,6 @@ export default function Document() {
                     name="keywords"
                     content="LukeLifts, fitness, exercise, bodybuilding, powerlifting, weightlifting, personal training, PT"
                 />
-                <meta property="og:url" content="https://www.lukelifts.com/" />
                 <meta
                     property="og:title"
                     content="LukeLifts Personal Training Programmes &#124; LukeLifts Blog"
@@ -42,12 +41,7 @@ export default function Document() {
                 <meta property="og:locale" content="en_GB" />
                 <link
                     rel="shortcut icon"
-                    href="https://www.lukelifts.com/wp-content/uploads/2021/03/favicon.png"
-                    type="image/x-icon"
-                />
-                <link
-                    rel="icon"
-                    href="https://www.lukelifts.com/wp-content/uploads/2021/03/favicon.png"
+                    href="../assets/favicon.png"
                     type="image/x-icon"
                 />
                 <Script
@@ -55,10 +49,6 @@ export default function Document() {
                     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
                     crossOrigin="anonymous"
                     async={false} // Ensure jQuery loads synchronously
-                />
-                <link
-                    rel="stylesheet"
-                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
                 />
             </Head>
             <body>
