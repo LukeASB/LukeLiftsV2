@@ -10,7 +10,7 @@ export default function Document() {
             <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
             <meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
             <link rel="canonical" href="https://www.lukelifts.com/" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
             <meta http-equiv="content-script-type" content="text/javascript" />
             <meta http-equiv="content-style-type" content="text/css" />
             <meta http-equiv="content-language" content="en-GB" />

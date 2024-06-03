@@ -12,8 +12,8 @@ const Card: React.FC<ICard> = (card: ICard) => {
                 <div className="card-body bg-dark text-light border-light">
                     <ul className="list-unstyled">
                         <li className="price h4">
-                            <span>{card.name} </span>
-                            {card.level}
+                            <span>{card.name} </span><br></br>
+                            {card.duration}
                             <br></br>
                             {card.price}
                             <div className="trainingAndMealPlan mt-3">
@@ -32,15 +32,15 @@ const Card: React.FC<ICard> = (card: ICard) => {
                                 data-popup-id="680"
                                 data-do-default="0"
                                 data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"
+                                data-bs-target={`#${card.readMoreModal.id}`}
                             >
                                 Read More
                             </button>
 
                             <Modal
-                                id="exampleModal"
-                                title="Modal Title"
-                                body="This is the body of the modal."
+                                id={card.readMoreModal.id}
+                                title={card.readMoreModal.title}
+                                body={card.readMoreModal.body}
                             />
 
                         </li>

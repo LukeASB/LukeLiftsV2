@@ -10,7 +10,7 @@ const Modal: React.FC<IModal> = (modal: IModal) => {
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         
                     </div>
-                    <div className="modal-body text-black">
+                    <div className="modal-body text-black text-start">
                         {modal.body}
                     </div>
                 </div>

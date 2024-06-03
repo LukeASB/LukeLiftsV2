@@ -1,7 +1,7 @@
 interface IModal {
     id: string,
     title: string,
-    body: string
+    body: JSX.Element
 }
 
 export default IModal;

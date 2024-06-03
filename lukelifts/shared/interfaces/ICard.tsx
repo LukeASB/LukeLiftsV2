@@ -2,7 +2,7 @@ import IModal from "./IModal";
 
 interface ICard {
     name: string;
-    level: string;
+    duration: string;
     price: string;
     featureList: string[];
     readMoreModal: IModal;
