@@ -1,4 +1,3 @@
-
 import Modal from "../modal";
 import ICard from "../../shared/interfaces/ICard";
 
@@ -12,7 +11,8 @@ const Card: React.FC<ICard> = (card: ICard) => {
                 <div className="card-body bg-dark text-light border-light">
                     <ul className="list-unstyled">
                         <li className="price h4">
-                            <span>{card.name} </span><br></br>
+                            <span>{card.name} </span>
+                            <br></br>
                             {card.duration}
                             <br></br>
                             {card.price}
@@ -42,7 +42,6 @@ const Card: React.FC<ICard> = (card: ICard) => {
                                 title={card.readMoreModal.title}
                                 body={card.readMoreModal.body}
                             />
-
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,6 @@
 import About from "../about";
-import Programs from "../programs";
-import EmailListSection from "../emailListSection";
+import Programs from "../program/programs";
+import EmailListSection from "../emailList/emailListSection";
 
 const Home: React.FC = () => {
     return (
