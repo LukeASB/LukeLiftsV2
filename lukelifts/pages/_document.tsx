@@ -16,13 +16,12 @@ export default function Document() {
                     content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"
                 />
                 <link rel="canonical" href="https://www.lukelifts.com/" />
-                {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
                 <meta
-                    http-equiv="content-script-type"
+                    httpEquiv="content-script-type"
                     content="text/javascript"
                 />
-                <meta http-equiv="content-style-type" content="text/css" />
-                <meta http-equiv="content-language" content="en-GB" />
+                <meta httpEquiv="content-style-type" content="text/css" />
+                <meta httpEquiv="content-language" content="en-GB" />
                 <meta name="author" content="LukeLifts" />
                 <meta
                     name="description"
@@ -43,6 +42,11 @@ export default function Document() {
                     rel="shortcut icon"
                     href="../assets/favicon.png"
                     type="image/x-icon"
+                />
+                <link
+                    rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                    crossOrigin="anonymous"
                 />
                 <Script
                     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
