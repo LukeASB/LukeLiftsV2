@@ -1,4 +1,3 @@
-import { ModalBody } from "react-bootstrap";
 import Card from "./card";
 import IProgram from "../../shared/interfaces/IProgram";
 
@@ -6,6 +5,7 @@ const beginnerProgram: IProgram = {
     name: "BEGINNER",
     duration: "12 WEEK PROGRAM",
     price: "£10.00",
+    paymentId: "HPQXXNL6E4XGL",
     featureList: [
         "LEVEL: NOVICE",
         "DURATION: 12 WEEKS",
@@ -30,7 +30,8 @@ const beginnerProgram: IProgram = {
 const intermediateProgram: IProgram = {
     name: "INTERMEDIATE",
     duration: "12 WEEK PROGRAM",
-    price: "£15.00",
+    price: "£20.00",
+    paymentId: "WWWHS4QVZ5U4C",
     featureList: [
         "LEVEL: INTERMEDIATE",
         "DURATION: 12 WEEKS",
@@ -77,7 +78,8 @@ const intermediateProgram: IProgram = {
 const personalProgram: IProgram = {
     name: "PERSONAL",
     duration: "12 WEEK PROGRAM",
-    price: "£20.00",
+    price: "£30.00",
+    paymentId: "77QKFZUT48UBN",
     featureList: [
         "PERSONALISED PROGRAM",
         "DURATION: 12 WEEKS",
@@ -128,7 +130,7 @@ const CardView: React.FC = () => {
                     body: beginnerProgram.modalBodyText,
                 }}
                 image="benchpress"
-                payPalId="HPQXXNL6E4XGL"
+                payPalId={beginnerProgram.paymentId}
                 available={true}
             />
             <Card
@@ -142,7 +144,7 @@ const CardView: React.FC = () => {
                     body: intermediateProgram.modalBodyText,
                 }}
                 image="deadlift"
-                payPalId="WWWHS4QVZ5U4C"
+                payPalId={intermediateProgram.paymentId}
                 available={true}
             />
             <Card
@@ -156,7 +158,7 @@ const CardView: React.FC = () => {
                     body: personalProgram.modalBodyText,
                 }}
                 image="squat"
-                payPalId="77QKFZUT48UBN"
+                payPalId={personalProgram.paymentId}
                 available={true}
             />
         </>
