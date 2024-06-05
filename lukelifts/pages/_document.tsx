@@ -54,6 +54,7 @@ export default function Document() {
                     crossOrigin="anonymous"
                     async={false} // Ensure jQuery loads synchronously
                 />
+                <Script data-goatcounter="https://lukelifts.goatcounter.com/count" async={false} src="//gc.zgo.at/count.js"/>
             </Head>
             <body>
                 <Main />
