@@ -54,7 +54,11 @@ export default function Document() {
                     crossOrigin="anonymous"
                     async={false} // Ensure jQuery loads synchronously
                 />
-                <Script data-goatcounter="https://lukelifts.goatcounter.com/count" async={false} src="//gc.zgo.at/count.js"/>
+                <Script
+                    data-goatcounter="https://lukelifts.goatcounter.com/count"
+                    src="//gc.zgo.at/count.js"
+                    strategy="afterInteractive"
+                />
             </Head>
             <body>
                 <Main />
