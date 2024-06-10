@@ -59,6 +59,9 @@ export default function Document() {
                     src="//gc.zgo.at/count.js"
                     strategy="afterInteractive"
                 />
+                <noscript>
+                    <img src="https://lukelifts.goatcounter.com/count?p=HOME" alt="GoatCounter" style={{display: "none"}}/>
+                </noscript>
             </Head>
             <body>
                 <Main />

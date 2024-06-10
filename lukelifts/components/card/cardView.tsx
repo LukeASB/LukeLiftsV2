@@ -3,6 +3,7 @@ import IProgram from "../../shared/interfaces/IProgram";
 
 const beginnerProgram: IProgram = {
     name: "BEGINNER",
+    image: "benchpress",
     duration: "12 WEEK PROGRAM",
     price: "£10.00",
     paymentId: "HPQXXNL6E4XGL",
@@ -11,6 +12,7 @@ const beginnerProgram: IProgram = {
         "DURATION: 12 WEEKS",
         "REQUIRES: BAR / WEIGHTS",
     ],
+    modalId: "beginnerProgram",
     modalBodyText: (
         <div>
             <p>
@@ -26,9 +28,11 @@ const beginnerProgram: IProgram = {
             </p>
         </div>
     ),
+    available: true
 };
 const intermediateProgram: IProgram = {
     name: "INTERMEDIATE",
+    image: "deadlift",
     duration: "12 WEEK PROGRAM",
     price: "£20.00",
     paymentId: "WWWHS4QVZ5U4C",
@@ -37,6 +41,7 @@ const intermediateProgram: IProgram = {
         "DURATION: 12 WEEKS",
         "REQUIRES: BAR / WEIGHTS",
     ],
+    modalId: "intermediateProgram",
     modalBodyText: (
         <div>
             <p>Struggling to make any more easy beginner gains?</p>
@@ -74,9 +79,11 @@ const intermediateProgram: IProgram = {
             </p>
         </div>
     ),
+    available: true
 };
 const personalProgram: IProgram = {
     name: "PERSONAL",
+    image: "squat",
     duration: "12 WEEK PROGRAM",
     price: "£30.00",
     paymentId: "77QKFZUT48UBN",
@@ -85,6 +92,7 @@ const personalProgram: IProgram = {
         "DURATION: 12 WEEKS",
         "REQUIRES: BAR / WEIGHTS",
     ],
+    modalId: "personalProgram",
     modalBodyText: (
         <div>
             <p>Need a personalised program to help you progress?</p>
@@ -114,53 +122,38 @@ const personalProgram: IProgram = {
             </p>
         </div>
     ),
+    available: true
 };
 
+const programs: IProgram[] = [
+    beginnerProgram,
+    intermediateProgram,
+    personalProgram
+];
+
 const CardView: React.FC = () => {
+    debugger;
     return (
         <>
-            <Card
-                name={beginnerProgram.name}
-                duration={beginnerProgram.duration}
-                price={beginnerProgram.price}
-                featureList={beginnerProgram.featureList}
-                readMoreModal={{
-                    id: "beginnerProgram",
-                    title: beginnerProgram.name,
-                    body: beginnerProgram.modalBodyText,
-                }}
-                image="benchpress"
-                payPalId={beginnerProgram.paymentId}
-                available={true}
-            />
-            <Card
-                name={intermediateProgram.name}
-                duration={intermediateProgram.duration}
-                price={intermediateProgram.price}
-                featureList={intermediateProgram.featureList}
-                readMoreModal={{
-                    id: "intermediateProgram",
-                    title: intermediateProgram.name,
-                    body: intermediateProgram.modalBodyText,
-                }}
-                image="deadlift"
-                payPalId={intermediateProgram.paymentId}
-                available={true}
-            />
-            <Card
-                name={personalProgram.name}
-                duration={personalProgram.duration}
-                price={personalProgram.price}
-                featureList={personalProgram.featureList}
-                readMoreModal={{
-                    id: "personalProgram",
-                    title: personalProgram.name,
-                    body: personalProgram.modalBodyText,
-                }}
-                image="squat"
-                payPalId={personalProgram.paymentId}
-                available={true}
-            />
+            {programs.map((program, i) => {
+                return (
+                    <Card
+                        key={`${program}_${i}`}
+                        name={program.name}
+                        duration={program.duration}
+                        price={program.price}
+                        featureList={program.featureList}
+                        readMoreModal={{
+                            id: program.modalId,
+                            title: program.name,
+                            body: program.modalBodyText,
+                        }}
+                        image={program.image}
+                        payPalId={program.paymentId}
+                        available={program.available}
+                    />
+                )
+            })}
         </>
     );
 };

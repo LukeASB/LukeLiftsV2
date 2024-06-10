@@ -1,4 +1,3 @@
-"../public/css/globals.css";
 
 const About: React.FC = () => {
     return (
