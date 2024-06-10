@@ -132,7 +132,6 @@ const programs: IProgram[] = [
 ];
 
 const CardView: React.FC = () => {
-    debugger;
     return (
         <>
             {programs.map((program, i) => {
