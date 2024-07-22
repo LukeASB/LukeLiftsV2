@@ -2,7 +2,7 @@
 const About: React.FC = () => {
     return (
         <div id="about">
-            <section className="container my-3 pb-3 sectionMinHeight sectionBorder text-light">
+            <section className="container my-3 pb-3 sectionMinHeight sectionBorder text-black">
                 <div className="row align-items-center">
                     <div className="col-md-8">
                         <h1>WELCOME TO LUKELIFTS</h1>

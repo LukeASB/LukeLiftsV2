@@ -24,7 +24,7 @@ const EmailListForm: React.FC = () => {
                                     type="email"
                                     name="EMAIL"
                                     placeholder="Enter your email"
-                                    className="form-control bg-dark text-light w-100"
+                                    className="form-control bg-light text-black w-100"
                                     id="mce-EMAIL"
                                     required
                                 />
