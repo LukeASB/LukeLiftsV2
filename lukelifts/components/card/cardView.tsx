@@ -5,7 +5,7 @@ const beginnerProgram: IProgram = {
     name: "BEGINNER",
     image: "benchpress",
     duration: "12 WEEK PROGRAM",
-    price: "£10.00",
+    price: "£20.00",
     paymentId: "HPQXXNL6E4XGL",
     featureList: [
         "LEVEL: NOVICE",
@@ -34,7 +34,7 @@ const intermediateProgram: IProgram = {
     name: "INTERMEDIATE",
     image: "deadlift",
     duration: "12 WEEK PROGRAM",
-    price: "£20.00",
+    price: "£30.00",
     paymentId: "WWWHS4QVZ5U4C",
     featureList: [
         "LEVEL: INTERMEDIATE",
@@ -85,7 +85,7 @@ const personalProgram: IProgram = {
     name: "PERSONAL",
     image: "squat",
     duration: "12 WEEK PROGRAM",
-    price: "£30.00",
+    price: "£90.00",
     paymentId: "77QKFZUT48UBN",
     featureList: [
         "PERSONALISED PROGRAM",
