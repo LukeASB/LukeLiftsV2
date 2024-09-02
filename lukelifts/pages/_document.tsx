@@ -62,6 +62,22 @@ export default function Document() {
                 <noscript>
                     <img src="https://lukelifts.goatcounter.com/count?p=HOME" alt="GoatCounter" style={{display: "none"}}/>
                 </noscript>
+
+                {/* <!-- Google tag (gtag.js) --> */}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-VWVCP7YQ15"
+                    strategy="afterInteractive" // Ensures the script loads after the page is interactive
+                />
+
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-VWVCP7YQ15');
+                    `}
+                </Script>
             </Head>
             <body>
                 <Main />
