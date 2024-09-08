@@ -1,6 +1,6 @@
 import About from "../about";
 import Programs from "../program/programs";
-import EmailListSection from "../emailList/emailListSection";
+// import EmailListSection from "../emailList/emailListSection";
 
 const Home: React.FC = () => {
     return (
@@ -9,7 +9,7 @@ const Home: React.FC = () => {
             <div className="container content">
                 <About />
                 <Programs />
-                <EmailListSection />
+                {/* <EmailListSection /> */}
             </div>
         </div>
     );
