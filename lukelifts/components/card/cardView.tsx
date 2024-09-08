@@ -1,12 +1,14 @@
 import Card from "./card";
 import IProgram from "../../shared/interfaces/IProgram";
 
+// Move to a new file called program data...
 const beginnerProgram: IProgram = {
     name: "BEGINNER",
     image: "benchpress",
     duration: "12 WEEK PROGRAM",
     price: "£20.00",
     paymentId: "HPQXXNL6E4XGL",
+    stripPaymentUrl: "https://buy.stripe.com/7sIaHub677JibccbII",
     featureList: [
         "LEVEL: NOVICE",
         "DURATION: 12 WEEKS",
@@ -34,8 +36,9 @@ const intermediateProgram: IProgram = {
     name: "INTERMEDIATE",
     image: "deadlift",
     duration: "12 WEEK PROGRAM",
-    price: "£30.00",
+    price: "£20.00",
     paymentId: "WWWHS4QVZ5U4C",
+    stripPaymentUrl: "https://buy.stripe.com/7sIeXK2zB7Jidkk4gh",
     featureList: [
         "LEVEL: INTERMEDIATE",
         "DURATION: 12 WEEKS",
@@ -86,7 +89,8 @@ const personalProgram: IProgram = {
     image: "squat",
     duration: "12 WEEK PROGRAM",
     price: "£90.00",
-    paymentId: "77QKFZUT48UBN",
+    paymentId: "77QKFZUT48UBN", //PayPal ID
+    stripPaymentUrl: "",
     featureList: [
         "PERSONALISED PROGRAM",
         "DURATION: 12 WEEKS",
@@ -128,7 +132,7 @@ const personalProgram: IProgram = {
 const programs: IProgram[] = [
     beginnerProgram,
     intermediateProgram,
-    personalProgram
+    // personalProgram
 ];
 
 const CardView: React.FC = () => {
@@ -149,6 +153,7 @@ const CardView: React.FC = () => {
                         }}
                         image={program.image}
                         payPalId={program.paymentId}
+                        stripPaymentUrl={program.stripPaymentUrl}
                         available={program.available}
                     />
                 )

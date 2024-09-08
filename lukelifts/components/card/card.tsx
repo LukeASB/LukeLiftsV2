@@ -1,5 +1,7 @@
 import Modal from "../modal";
 import ICard from "../../shared/interfaces/ICard";
+import PayPalButton from "../payments/payPalButton";
+import StripePaymentButton from "../payments/stripePaymentButton";
 
 const generateCardFeatureList = (featureList: string[]) =>
     featureList.map((el, i) => <li key={`${i}_${el}`}>{el}</li>);
@@ -46,31 +48,8 @@ const Card: React.FC<ICard> = (card: ICard) => {
                     </ul>
                 </div>
                 <div className="card-footer bg-light text-black border-grey">
-                    <form
-                        action="https://www.paypal.com/cgi-bin/webscr"
-                        method="post"
-                        target="_top"
-                    >
-                        <input type="hidden" name="cmd" value="_s-xclick" />
-                        <input
-                            type="hidden"
-                            name="hosted_button_id"
-                            value={card.payPalId}
-                        />{" "}
-                        {/* Unique PayPal Value */}
-                        <input
-                            type="submit"
-                            className={
-                                card.available
-                                    ? "btn btn-primary btn-custom w-100"
-                                    : "btn btn-danger btn-custom w-100"
-                            }
-                            name={card.available ? "PURCHASE" : "UNAVAILABLE"}
-                            value={card.available ? "PURCHASE" : "UNAVAILABLE"}
-                            alt="PayPal – The safer, easier way to pay online!"
-                            disabled={!card.available}
-                        />
-                    </form>
+                    {/* <PayPalButton id={card.payPalId} available={card.available}/> */}
+                    <StripePaymentButton paymentURL={card.stripPaymentUrl} available={card.available} />
                 </div>
             </div>
         </div>

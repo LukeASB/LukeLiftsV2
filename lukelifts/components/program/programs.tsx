@@ -8,7 +8,9 @@ const Programs: React.FC = () => {
                 <div className="row text-center">
                     <h1>BEST PROGRAMS TO BUILD STRENGTH AND MUSCLE</h1>
                     <p>Find the plan most suited to your needs</p>
-                    <CardView />
+                    <div className="row justify-content-center">
+                        <CardView />
+                    </div>
                 </div>
                 <ProgramInfo />
             </section>

@@ -8,6 +8,7 @@ interface ICard {
     readMoreModal: IModal;
     image: string;
     payPalId: string;
+    stripPaymentUrl: string;
     available: boolean;
 }
 

@@ -4,6 +4,7 @@ interface IProgram {
     duration: string,
     price: string,
     paymentId: string,
+    stripPaymentUrl: string,
     featureList: string[],
     modalId: string,
     modalBodyText: JSX.Element,
