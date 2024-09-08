@@ -4,7 +4,7 @@ import IProgram from "../../shared/interfaces/IProgram";
 // Move to a new file called program data...
 const beginnerProgram: IProgram = {
     name: "BEGINNER",
-    image: "benchpress",
+    image: "squat",
     duration: "12 WEEK PROGRAM",
     price: "£20.00",
     paymentId: "HPQXXNL6E4XGL",
